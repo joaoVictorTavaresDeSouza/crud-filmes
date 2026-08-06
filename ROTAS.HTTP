@@ -1,0 +1,31 @@
+### CADASTRAR
+
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+{
+    "title":"Spider Man Brand New Day",
+    "gender":"Action",
+    "duration":119,
+    "classification":"12"
+}
+
+###
+
+GET http://localhost:3000/filmes
+
+###
+
+PUT http://localhost:3000/filmes/1
+Content-Type: application/json
+
+{
+    "title":"Homem-Aranha 2",
+    "gender":"Ação",
+    "duration":127,
+    "classification":"12 anos"
+}
+
+###
+
+DELETE http://localhost:3000/filmes/2
