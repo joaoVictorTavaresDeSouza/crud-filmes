@@ -1,0 +1,26 @@
+{
+  "name": "tarefaemgrupo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "node --watch script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG/issues"
+  },
+  "homepage": "https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.2"
+  }
+}

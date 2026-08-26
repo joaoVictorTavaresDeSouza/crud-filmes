@@ -1,0 +1,31 @@
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/criarfilme
+Content-Type: application/json
+
+{
+    "titulo": "Homem-aranha",
+    "genero": "Animação/Musical",
+    "duracao": "014200",
+    "classificacaoEtaria": "12 anos"
+}
+
+###
+DELETE http://localhost:3000/deletarfilme/17
+
+###
+PUT http://localhost:3000/editarfilme/7
+Content-Type: application/json
+
+{
+    "titulo": "ANA BANANA",
+    "genero": "Ação",
+    "duracao": 121000,
+    "classificacaoEtaria": "12 anos"
+}
+
+###
+GET http://localhost:3000/todosfilmes
+
