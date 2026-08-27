@@ -15,7 +15,7 @@ app.get("/", (req,res) =>{
 })
 
 app.post("/criarfilme", (req,res) =>{
-    const {id, titulo, genero, duracao, classificacaoEtaria} = req.body
+    const {id, title, gender, duration, classification} = req.body
 
     const insertCommand = "INSERT INTO filmes_EmillyNonatoJoaoVictorTavares ( title, gender, duration, classification) VALUES (?,?,?,?)"
 
@@ -30,7 +30,7 @@ app.post("/criarfilme", (req,res) =>{
     })
 })
 
-app.get("/todosfilmes", (req, res) => {
+app.get("/filmes", (req, res) => {
     const selectCommand = "SELECT * FROM filmes_EmillyNonatoJoaoVictorTavares"
 
     sql.query(selectCommand, (error, data) => {

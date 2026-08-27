@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG.git"
+    "url": "git+https://github.com/joaoVictorTavaresDeSouza/front-do-crud.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG/issues"
+    "url": "https://github.com/joaoVictorTavaresDeSouza/front-do-crud/issues"
   },
-  "homepage": "https://github.com/giovanagouvea11TIB/atividadeEmDuplaCKeGG#readme",
+  "homepage": "https://github.com/joaoVictorTavaresDeSouza/front-do-crud#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",

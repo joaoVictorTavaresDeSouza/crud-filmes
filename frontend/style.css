@@ -2,6 +2,11 @@
 font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+background-color: #a7477f;
+color: white;
+}
+
 h1 {
 text-align: center;
 }
@@ -18,4 +23,11 @@ border: 1px solid black;
 width: 300px;
 height: 200px;
 padding: 10px;
+color:black;
+background-color: white;
+border-radius: 10px;
+}
+
+div:hover {
+background-color: #fcd0e9;
 }
