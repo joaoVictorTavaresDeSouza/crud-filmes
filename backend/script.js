@@ -2,7 +2,6 @@ import express from "express"
 import mysql2 from "mysql2"
 import cors from "cors"
 
-
 const app = express()
 
 app.use(express.json())
@@ -11,16 +10,16 @@ app.use(cors())
 
 app.get("/", (req,res) =>{
     res.json({
-        message:"Servidor ta on,chama bb"
+        message:"Servidor ta on, vai corinthians"
     })
 })
 
 app.post("/criarfilme", (req,res) =>{
     const {id, titulo, genero, duracao, classificacaoEtaria} = req.body
 
-    const insertCommand = "INSERT INTO filmes_GiovanaGouveaCinthiaKarolina ( titulo, genero, duracao, classificacaoEtaria) VALUES (?,?,?,?)"
+    const insertCommand = "INSERT INTO filmes_EmillyNonatoJoaoVictorTavares ( title, gender, duration, classification) VALUES (?,?,?,?)"
 
-    sql.query(insertCommand,[titulo, genero, duracao, classificacaoEtaria],(error)=>{
+    sql.query(insertCommand,[title, gender, duration, classification],(error)=>{
         if (error) {
             console.log(error)
             return
@@ -32,7 +31,7 @@ app.post("/criarfilme", (req,res) =>{
 })
 
 app.get("/todosfilmes", (req, res) => {
-    const selectCommand = "SELECT * FROM filmes_GiovanaGouveaCinthiaKarolina"
+    const selectCommand = "SELECT * FROM filmes_EmillyNonatoJoaoVictorTavares"
 
     sql.query(selectCommand, (error, data) => {
         if (error) {
@@ -44,11 +43,10 @@ app.get("/todosfilmes", (req, res) => {
     })
 })
 
-
 app.delete("/deletarfilme/:id", (req, res) => {
     const { id } = req.params
 
-    const deleteCommand = "DELETE FROM filmes_GiovanaGouveaCinthiaKarolina WHERE id=?"
+    const deleteCommand = "DELETE FROM filmes_EmillyNonatoJoaoVictorTavares WHERE id=?"
 
     sql.query(deleteCommand, [id], (error) => {
         if(error){
@@ -62,17 +60,13 @@ app.delete("/deletarfilme/:id", (req, res) => {
     })
 })
 
-
-
-
-
 app.put ("/editarfilme/:id", (req, res) => {
     const { id } = req.params
-    const { titulo, genero, duracao, classificacaoEtaria } = req.body
+    const { title, gender, duration, classification } = req.body
 
-    const updateCommand = "UPDATE filmes_GiovanaGouveaCinthiaKarolina SET titulo = ?, genero = ?, duracao = ?, classificacaoEtaria = ? WHERE id = ?"
+    const updateCommand = "UPDATE filmes_EmillyNonatoJoaoVictorTavares SET title = ?, gender = ?, duration = ?, classification = ? WHERE id = ?"
 
-    sql.query(updateCommand, [titulo, genero, duracao, classificacaoEtaria, id], (error) => {
+    sql.query(updateCommand, [title, gender, duration, classification, id], (error) => {
         if (error) {
             console.log(error)
             return
@@ -85,9 +79,8 @@ app.put ("/editarfilme/:id", (req, res) => {
 })
 
 app.listen (3000, ()=>{
-    console.log("Servidor On")
+    console.log("Servidor Rodando na porta 3000")
 })
-
 
 const sql = mysql2.createPool({
     host: "benserverplex.ddns.net",
