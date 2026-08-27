@@ -1,6 +1,1 @@
-DB_HOST=benserverplex.ddns.net
-DB_DATABASE=alunos_filmes03MB
-DB_USER=alunos
-DB_PASSWORD=senhaAlunos
-
 node_modules
