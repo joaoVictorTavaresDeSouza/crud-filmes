@@ -39,3 +39,7 @@ div:hover {
 background-color: #fcd0e9;
 transition: background-color 0.8s;
 }
+
+a {
+    color: white;
+}
