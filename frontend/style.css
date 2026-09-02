@@ -7,8 +7,15 @@ background-color: #a7477f;
 color: white;
 }
 
-h1 {
-text-align: center;
+header {
+    background: black;
+    padding: 20px;
+    color: white;
+    margin-bottom: 10px;
+
+    a {
+        color: white;
+    }
 }
 
 .filmes {
@@ -30,4 +37,5 @@ border-radius: 10px;
 
 div:hover {
 background-color: #fcd0e9;
+transition: background-color 0.8s;
 }

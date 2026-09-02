@@ -1,8 +1,8 @@
-GET http://localhost:3000/
+GET https://backend-crud-de-filmes.vercel.app/
 
 ###
 
-POST http://localhost:3000/criarfilme
+POST https://backend-crud-de-filmes.vercel.app/criarfilme
 Content-Type: application/json
 
 {
@@ -13,10 +13,10 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/deletarfilme/17
+DELETE https://backend-crud-de-filmes.vercel.app/deletarfilme/17
 
 ###
-PUT http://localhost:3000/editarfilme/7
+PUT https://backend-crud-de-filmes.vercel.app/editarfilme/7
 Content-Type: application/json
 
 {
@@ -27,5 +27,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/todosfilmes
+GET https://backend-crud-de-filmes.vercel.app/todosfilmes
 
