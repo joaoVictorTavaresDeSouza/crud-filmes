@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="./cadastrar/cadastrar.html"><h1>Filmes Nonato Tavares</h1></a>
+    <header class="topbar">
+        <a class="brand" href="./index.html">NONATO <span>&amp;</span> TAVARES</a>
+        <a class="new-film" href="./cadastrar/cadastrar.html">+ Novo filme</a>
+    </header>
 
-    <section class="filmes"></section>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">CATÁLOGO DE CINEMA</p>
+                <h1>Histórias que ficam depois dos créditos.</h1>
+                <p class="hero-text">Uma coleção para descobrir, lembrar e compartilhar os filmes que merecem uma sessão.</p>
+                <a class="hero-action" href="#catalogo">Explorar catálogo <span>↓</span></a>
+            </div>
+            <img src="./imgs/foto maneira.png" alt="Cena de filme em destaque">
+        </section>
+
+        <section class="catalog" id="catalogo">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EM CARTAZ NA MEMÓRIA</p>
+                    <h2>Todos os filmes</h2>
+                </div>
+                <span class="catalog-mark">01 / coleção</span>
+            </div>
+            <section class="filmes"></section>
+        </section>
+    </main>
 
     <script src="server.js"></script>
 
-    <img src="./imgs/foto maneira.png" alt="Foto do filme">
 </body>
 </html>

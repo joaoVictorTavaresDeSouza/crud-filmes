@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,38 @@
     <title>Cadastrar Filmes</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html">Voltar</a>
-        <h1>Cadastrar novos filmes</h1>
+    <header class="topbar">
+        <a class="brand" href="../index.html">NONATO <span>&amp;</span> TAVARES</a>
+        <a class="back-link" href="../index.html">← Voltar ao catálogo</a>
     </header>
 
     <main>
-        <form>
-            <div>
+        <section class="form-intro">
+            <p class="eyebrow">NOVA ENTRADA</p>
+            <h1>Adicionar um filme à coleção.</h1>
+            <p>Preencha os detalhes abaixo para guardar mais uma história no catálogo.</p>
+        </section>
+        <form onsubmit="event.preventDefault(); cadastrarFilme()">
+            <div class="field">
                 <label for="title">Título do filme:</label>
-                <input type="text" id="title" placeholder="Digite aqui o título">
+                <input type="text" id="title" placeholder="Ex.: O auto da compadecida">
             </div>
-            <div>
+            <div class="field">
                 <label for="gender">Gênero:</label>
-                <input type="text" id="gender" placeholder="Digite aqui o gênero">
+                <input type="text" id="gender" placeholder="Ex.: Drama, comédia">
             </div>
-            <div>
+            <div class="form-row">
+            <div class="field">
                 <label for="classification">Classificação indicativa:</label>
                 <input type="number" id="classification" placeholder="Digite aqui a classificação indicativa">
             </div>
-            <div>
+            <div class="field">
                 <label for="duration">Duração:</label>
-                <input type="number" id="duration" placeholder="Digite aqui a duração">
+                <input type="number" id="duration" placeholder="Minutos">
             </div>
+            </div>
+            <button type="submit">Cadastrar filme <span>→</span></button>
         </form>
-
-        <button onclick="cadastrarFilme()">Cadastrar</button>
     </main>
 
     <script src="./cadastrar.js"></script>
